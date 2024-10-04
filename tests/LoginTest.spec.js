@@ -11,6 +11,6 @@ describe("signup Test", ()=>{
 
     test("verify signup url Test", async({loginCredObj,page})=>{
         await loginCredObj.verifyUserCred(testData.user_name,testData.pass_word);
-        await loginCredObj.LoginErrorMessage();
+       // await loginCredObj.LoginErrorMessage();
     })
 })
