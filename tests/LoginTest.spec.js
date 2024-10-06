@@ -9,8 +9,9 @@ describe("signup Test", ()=>{
         await loginCredObj.signUpNavigation(testData.base_url);
     })
 
-    test("verify signup url Test", async({loginCredObj,page})=>{
+    test("verify signup url Test", async({loginCredObj,productSorting,page})=>{
         await loginCredObj.verifyUserCred(testData.user_name,testData.pass_word);
        // await loginCredObj.LoginErrorMessage();
+
     })
 })
