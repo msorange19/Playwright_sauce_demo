@@ -1,6 +1,7 @@
 const {test} = require ('../fixtures/init')
 const {describe, beforeEach} = require("node:test");
 const {expect} = require("@playwright/test");
+const {join} = require("node:path");
 const testData = JSON.parse(JSON.stringify(require('../config/cred.json')))
 
 describe("signup Test", ()=>{
