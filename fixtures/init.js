@@ -4,8 +4,7 @@ const {ProductPage} = require('../pages/ProductPage.spec.js');
 
 export const test = base.extend({
     loginCredObj : async ({ page}, use) =>{
-        const loginCredObj = new LogInPage(page);
-        await use(loginCredObj);
+        await use(new LogInPage(page));
     },
    productSorting : async ({page},use) =>{
         const productSorting = new ProductPage(page);
