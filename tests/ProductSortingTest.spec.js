@@ -1,9 +1,8 @@
-const {test} = require('../fixtures/init')
-const {describe, beforeEach} = require("node:test");
-const {expect} = require("@playwright/test");
-const {join} = require("node:path");
-const testData = JSON.parse(JSON.stringify(require('../config/cred.json')))
-const fs = require('fs');
+import {test} from '../fixtures/init';
+import {describe, beforeEach} from "node:test";
+import {expect} from "@playwright/test";
+import {join} from "node:path";
+import fs from'fs';
 
 
 let prodPriceSort = '';

@@ -1,7 +1,6 @@
-const  { test :base } = require( '@playwright/test' );
-const { LogInPage } = require('../pages/LogInPage.spec.js');
-
-const { ProductPage } = require('../pages/ProductPage.spec.js');
+import  { test as base } from '@playwright/test' ;
+import { LogInPage } from '../pages/LogInPage.spec.js';
+import { ProductPage } from '../pages/ProductPage.spec.js';
 
 export const test = base.extend({
     loginCredObj : async ({ page}, use) =>{

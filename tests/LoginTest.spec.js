@@ -1,6 +1,7 @@
-const {test} = require ('../fixtures/init')
-const {describe, beforeEach} = require("node:test");
-const testData = JSON.parse(JSON.stringify(require('../config/cred.json')))
+import {test} from '../fixtures/init'
+import {describe, beforeEach} from "node:test";
+//const testData = JSON.parse(JSON.stringify(require('../config/cred.json')))
+import testData from '../config/cred.json';
 
 describe("signup Test", ()=>{
 
