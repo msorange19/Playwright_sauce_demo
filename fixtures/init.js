@@ -8,7 +8,6 @@ export const test = base.extend({
         await use(new LogInPage(page));
     },
    productSorting : async ({page},use) =>{
-        const productSorting = new ProductPage(page);
-        await use (productSorting)
+        await use (new ProductPage(page))
    }
 })
